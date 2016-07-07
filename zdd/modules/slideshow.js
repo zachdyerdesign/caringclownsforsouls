@@ -1,23 +1,16 @@
 zdd.slideshow = {
   config: {
+    Slide: function(header, content, image, button, buttonLink) {
+      this.header = header;
+      this.content = content;
+      this.image = image;
+      this.button = button;
+      this.buttonLink = buttonLink;
+    },
     slides: [
-      {
-        "header": "Missouri Tile",
-        "content": "A large variety of tiles.",
-        "image": "images/slide1.jpg",
-        "button": "Contact Us",
-        "buttonLink": "contact.html"
-      },
-      {
-        "header": "Quality tiles",
-        "content": "Highest quality tiles on the market",
-        "image": "images/slide2.jpg"
-      },
-      {
-        "header": "We have the tiles for you",
-        "content": "Commercial and residential tiles",
-        "image": "images/slide3.jpg"
-      }]
+      {"header": "Caring Clowns", "content": "Encouraging through humor, a positive attitude towards illness and fears.", "image": "images/atbedside.jpg", "button": "Contact Us", "buttonLink": "contact.html"},
+      {"header": "Bringing smiles to the elderly.", "content": "We are compassionate and caring clowns who care for those who are suffering and we will come to brighten there day.", "image": "images/slide2.jpg"},
+      {"header": "Giving hope through Jesus Christ", "content": "The joy of knowing Jesus Christ is our greatest gift we offer to those who are suffering. We give peace of mind and hope through Him.", "image": "images/slide3.jpg"}]
   },
   load: function() {
     var html = '<style>';
