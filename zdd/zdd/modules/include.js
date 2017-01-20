@@ -5,7 +5,7 @@ zdd.include = {
   get: function() {
   	var
     	general = zdd.config,
-    	html = "<p>&copy;" + zdd.config.year + " " + general.title + " | Designed by <a href='http://" + general.website + "' target='_blank'>" + general.author + "</a></p>";
+    	html = "<p>&copy;2017 {{ site.title }} | Designed by <a href='http://zachdyerdesign.com' target='_blank'>Zach Dyer Design</a></p>";
   	document.write(html);
   }
 };

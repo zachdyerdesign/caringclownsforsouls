@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                        <a class="navbar-brand" href="/"><i class="fa fa-heart" style="font-size: auto; color: red"></i> {{ site.title }}</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul id="main-menu" class="nav navbar-nav">
+                            <li><a href="{{ site.github.url }}/index.html" target="_self" class="">Home</a></li>
+                            <li><a href="{{ site.github.url }}/about.html" target="_self" class="">About Us</a></li>
+                            <li><a href="{{ site.github.url }}/clown-prayer.html" target="_self" class="">Clown Prayer</a></li>
+                            <li><a href="{{ site.github.url }}/donate.html" target="_self" class="">Donate</a></li>
+                            <li><a href="{{ site.github.url }}/contact.html" target="_self" class="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    {{ content }}
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+        {% include footer.html %}
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
